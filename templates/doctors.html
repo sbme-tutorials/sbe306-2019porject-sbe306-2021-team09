@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <html>
+    
+ <head>
+
+ 
+	
+	<meta keywords="html,learn,teach" />
+
+	<link rel="stylesheet" type="text/css" href="../static/style1.css"> 
+	<!-- href da 3shan y2dar ye2ra el file ele ganbo -->
+
+	<!--3enwan el website ele byzhar for 5als -->
+	<title> Neonates1 </title>
+
+</head>
+<body>
+ <div  id="website_header"> <!-- 3shan a3rf 27ot el alwan bta3t el text--> 
+ 	<!-- bn7ot # f el css file -->
+ 	Noenatal website 
+ </div>	
+
+ 
+
+<div id="nwrap">
+	<div id="nheader">
+
+    <ul>
+      <li> <a href ="http://127.0.0.1:5000/homepage">|HOME </a>
+      </li>
+<li>|ABOUT
+      </li>
+      <li>|CONTACT US
+      </li>
+
+    </ul>
+	<h1>
+		Welcome Doctors
+	</h1>
+	 </div>
+	 <div class="bgarab">
+  
+ 	 <form action="/doctors" method="POST">
+ 
+
+  <div class="form-group">
+  	 
+  	
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ahmed Ahraf" name="name">
+
+
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">ID</label>
+    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="0000000" name="id">
+  </div>
+   <div class="form-group">
+    <label for="formGroupExampleInput">speciality</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="54872" name="department">
+
+
+  </div>
+  <!--<div  class=" row form-group"> 
+    /<form>
+    <label class=" col-sm-3 ">Gender</label>
+    <input class="col=sm-1" type="radio" name="sex" value="male">  
+    <span class="col-sm-2">Male</span>
+     <input class="col=sm-1" type="radio" name="sex" value="female">
+     <span class="col-sm-2" >Female</span>
+   </form>
+  </div> -->
+  Gender:<br>
+          <input type="radio" name="sex" value="Male">Male<br>
+          <input type="radio" name="sex" value="Female">Female<br><br>
+   
+birthdate:
+
+ <input type="date" name="bday">
+  <input type="submit" value="Send">
+
+  
+
+
+</form>
+
+<a href="http://127.0.0.1:5000/viewdoctor">View old doctors</a>
+ 
+
+ </div>
+ 
+
+<div id="npara">
+	<p  class="text_para">
+ word <span class="redcolor"> paragpgraph </span>
+</p>
+</div>
+</div>
+
+
+ </body>
+ </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>view doctors</title>
+      <meta name="description" content="neonatal department web application">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+   </head>
+    <style>
+      body,
+                html {
+                    width: 100%;
+                    height: 100%;
+                    font-family: 'PT Sans Caption', sans-serif;
+                    background: url(../static/images/background.jpg) no-repeat center center fixed; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+  
+                     } 
+    
+       .footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+    
+    </style>
+   <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="homepage.html">Neonatal Department</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        
+        <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/doctors">Add Doctor</a>
+      </li>
+        
+       <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/viewdoctor">View Doctor</a>
+      </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/neonates">Add Neonates</a>
+      </li>
+        
+         <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5000/viewneonates">View Neonates</a>
+      </li>
+        
+        
+    </ul>
+    
+  </div>
+</nav>
+      
+      
+       
+  
+      <h1>View All Doctors</h1>
+    
+      
+      <table border="1">
+         <thead border="1">
+            
+            <tr>
+               {% for r in data.header %}
+                  <th>{{ r }}</th>
+               {% endfor %}
+            </tr>
+          
+         </thead>
+         <tbody border="1">
+            {% for r in data.rec %}
+            <tr>
+               {% for l in r %}
+                  <td> {{ l }}</td>
+               {% endfor %}
+            </tr>
+            {% endfor %}
+         </tbody>
+
+      </table>
+     
+       <div class=" footer"  >
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Neonatal Department
+  
+          </div>         
+     
+   </body>
+</html> 

@@ -1,0 +1,118 @@
+ 
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<html>
+<head>
+	 		<title> Neonates1 </title>
+
+		<link rel="stylesheet" type="text/css" href="../static/neonates.css"> 
+	 
+</head>
+ <body>
+ <div  id="website_header"> <!-- 3shan a3rf 27ot el alwan bta3t el text--> 
+ 	<!-- bn7ot # f el css file -->
+ 	Noenatal website 
+ </div>	
+
+ 
+
+<div id="nwrap">
+	<div id="nheader">
+
+    <ul>
+      <li> <a href ="http://127.0.0.1:5000/homepage" >|HOME </a>
+      </li>
+<li>|ABOUT
+      </li>
+      <li>|CONTACT US
+      </li>
+
+    </ul>
+	<h1>
+		Welcome Neonates
+	</h1>
+	 </div>
+	 <div class="bgarab">
+  
+ 	 <form action="/neonates" method="POST">
+ 
+
+  <div class="form-group">
+  	 
+  	
+    <label for="formGroupExampleInput">firstname</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="menna ahmed" name="firstname">
+
+    <label for="formGroupExampleInput">lastname</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="menna ahmed" name="lastname">
+
+
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">ID</label>
+    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="125478" name="id">
+  </div>
+   <div class="form-group">
+    <!--<label for="formGroupExampleInput">Number</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="000000">-->
+
+
+  </div>
+ <!--<div class=" row form-group"> 
+    <form>
+    <label class=" col-sm-3 ">Gender</label>
+    <input class="col=sm-1" type="radio" name="gender" value="male">  
+    <span class="col-sm-2">Male</span>
+     <input class="col=sm-1" type="radio" name="gender" value="female">
+     <span class="col-sm-2" >Female</span>
+   </form>
+  </div>-->
+
+  birthdate:
+
+    <input type="date" name="bday"><br><br>
+
+  Gender:<br>
+    <input type="radio" name="sex" value="Male">Male<br>
+    <input type="radio" name="sex" value="Female">Female<br><br>
+   
+
+  
+
+  <!--<div class=" row form-group"> 
+    <form>
+    <label class=" col-sm-3 ">Status:</label>
+    <input class="col=sm-1" type="radio" name="gender" value="male">  
+    <span class="col-sm-2">ICARE</span>
+     <input class="col=sm-1" type="radio" name="gender" value="female">
+     <span class="col-sm-2" >NCARE</span>
+   </form>
+  </div>-->
+
+  status:<br>
+    <input class="col=sm-1" type="radio" name="text" value="ICARE">ICARE<br>
+    <input class="col=sm-1" type="radio" name="text" value="NCARE">NCARE<br><br>
+
+  <input type="submit" value="Send"><br>
+
+</form>
+
+<a href="http://127.0.0.1:5000/viewneonates">View old Neonates</a>
+ 
+
+ </div>
+ 
+
+<div id="npara">
+	<p  class="text_para">
+	
+word <span class="redcolor"> paragpgraph </span>
+</p>
+</div>
+</div>
+
+
+ </body>
+</html>
